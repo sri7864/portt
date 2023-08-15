@@ -1,0 +1,138 @@
+.mask{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.intro-img{
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.mask::after{
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+}
+
+.hero .content{
+    position: absolute ;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    display: flex; /* Use flexbox to horizontally align buttons */
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; 
+   
+}
+
+.hero .content h1{
+    font-size: 4rem;
+    padding: 0.6rem 0 1.5rem;
+    
+}
+.hero .content p{
+     font-size: 1.4rem;
+     font-weight: 200;
+     text-transform: uppercase;
+}
+.content .btn{
+    /*margin: 1rem 0.2rem ; */
+    margin: 0.5rem; 
+}
+/* Reset default margin and padding */
+body, h1, h2, h3, p, div {
+    margin: 89;
+    padding: 0;
+  }
+  
+  /* Apply basic styles to the container */
+  .sri {
+    font-size: 24px;
+    font-weight: inherit;
+    color: #efffb7;
+    text-align: center;
+    padding: 2px;
+    white-space: nowrap;
+    margin-bottom: 60px;
+    background-color: #383838;
+    border-radius: 7px;
+  }
+  
+  /* Add additional styling, if desired */
+  .sri::before {
+    content: "\201C"; /* Left double quotation mark */
+    font-size: 24px;
+    margin-right: 5px;
+    
+  }
+  
+  .sri::after {
+    content: "\201D"; /* Right double quotation mark */
+    font-size: 24px;
+    margin-left: 5px;
+  }
+.rapper{
+    display: flex;
+    flex: 50 50;
+    
+}
+  
+
+@media screen and (max-width:640px) {
+    .hero .content h1 {
+        font-size: 3rem;
+    }
+    .hero .content p {
+        font-size: 1.4rem;
+    }
+    .sri {
+        font-size: 12px;
+        font-weight:bold;
+        color: #f2fdcc;
+        text-align: center;
+        padding: 5px 10px; /* Adjust padding as needed */
+
+         
+        margin-bottom: 50px;
+        background-color: #383838; 
+        border-radius: 7px;
+        white-space: nowrap;
+
+       
+       
+      }
+      
+      /* Add additional styling, if desired */
+      .sri::before {
+        content: "\201C"; /* Left double quotation mark */
+        font-size: 15px;
+        margin-right: 5px;
+
+
+       
+        
+      }
+      
+      .sri::after {
+        content: "\201D"; /* Right double quotation mark */
+        font-size: 15px;
+        margin-left: 5px;
+       }  
+   
+    
+}
